@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informative Articles</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff1493;
+            padding: 15px 20px;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: 120px auto 40px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #ff1493;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .article-info {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+
+        .rating {
+            margin-top: 10px;
+        }
+
+        .star-rating {
+            font-size: 1.2em;
+            color: #ff1493;
+        }
+
+        .article-card {
+            margin-bottom: 40px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 5px solid #ff1493;
+            border-radius: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="nav-brand">Mental Health Help</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Home</a></li>
+            
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Content Container -->
+    <div class="content-container">
+        <h1>Informative Articles</h1>
+        
+        <!-- Article 1 -->
+        <div class="article-card">
+            <h2>Understanding Mindfulness</h2>
+            <p>
+                Mindfulness is a powerful tool that helps individuals stay grounded and aware of their present experiences.
+                It involves paying attention to thoughts, feelings, and bodily sensations without judgment. Practicing mindfulness
+                has been shown to reduce stress, increase focus, and improve emotional regulation.
+            </p>
+            <div class="article-info">
+                <p><strong>Author:</strong> Dr. Emily White</p>
+                <p><strong>Published:</strong> October 21, 2024</p>
+            </div>
+            <div class="rating">
+                <p><strong>Rating:</strong> 
+                    <span class="star-rating">⭐⭐⭐⭐☆</span> (4/5)
+                </p>
+            </div>
+        </div>
+
+        <!-- Article 2 -->
+        <div class="article-card">
+            <h2>The Power of Positive Thinking</h2>
+            <p>
+                Positive thinking can have a profound impact on mental well-being. By focusing on the good, 
+                individuals can reduce stress and cultivate a sense of optimism, improving both emotional and physical health.
+            </p>
+            <div class="article-info">
+                <p><strong>Author:</strong> Sarah Mitchell</p>
+                <p><strong>Published:</strong> September 30, 2024</p>
+            </div>
+            <div class="rating">
+                <p><strong>Rating:</strong> 
+                    <span class="star-rating">⭐⭐⭐⭐⭐</span> (5/5)
+                </p>
+            </div>
+        </div>
+
+        <!-- Article 3 -->
+        <div class="article-card">
+            <h2>How to Cope with Anxiety</h2>
+            <p>
+                Anxiety can be overwhelming, but there are several techniques that can help manage its effects.
+                Breathing exercises, regular physical activity, and cognitive behavioral therapy are all proven methods to alleviate anxiety.
+            </p>
+            <div class="article-info">
+                <p><strong>Author:</strong> Dr. Michael Johnson</p>
+                <p><strong>Published:</strong> October 5, 2024</p>
+            </div>
+            <div class="rating">
+                <p><strong>Rating:</strong> 
+                    <span class="star-rating">⭐⭐⭐⭐☆</span> (4/5)
+                </p>
+            </div>
+        </div>
+
+        <!-- Article 4 -->
+        <div class="article-card">
+            <h2>Building Emotional Resilience</h2>
+            <p>
+                Emotional resilience is the ability to adapt to stressful situations and bounce back from adversity.
+                Strengthening this resilience involves practicing self-care, building supportive relationships, and developing problem-solving skills.
+            </p>
+            <div class="article-info">
+                <p><strong>Author:</strong> Linda Carter</p>
+                <p><strong>Published:</strong> August 15, 2024</p>
+            </div>
+            <div class="rating">
+                <p><strong>Rating:</strong> 
+                    <span class="star-rating">⭐⭐⭐⭐⭐</span> (5/5)
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

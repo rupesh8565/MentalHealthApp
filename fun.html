@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Learning</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff1493;
+            padding: 15px 20px;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 120px auto 40px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #ff1493;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .fun-section {
+            margin-top: 20px;
+        }
+
+        .fun-section h2 {
+            color: #333;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .activity {
+            margin-bottom: 20px;
+            background-color: #ffe4e1;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .activity p {
+            margin: 0;
+        }
+
+        .quiz {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        .quiz input[type="text"] {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .quiz button {
+            padding: 10px 15px;
+            background-color: #ff1493;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .quiz button:hover {
+            background-color: #ff69b4;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="nav-brand">Mental Health Help</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Home</a></li>
+            
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Content Container -->
+    <div class="content-container">
+        <h1>Fun Learning Activities</h1>
+        <p>Engage in these fun and interactive activities to boost your mental well-being while having fun!</p>
+
+        <!-- Activity Section 1 -->
+        <div class="fun-section">
+            <h2>Mood Booster Game</h2>
+            <div class="activity">
+                <p>This simple activity helps improve your mood. Try writing down three things you're grateful for today.</p>
+                <p><strong>How to Play:</strong> Think about what makes you happy, and reflect on how it makes you feel better.</p>
+            </div>
+        </div>
+
+        <!-- Activity Section 2 -->
+        <div class="fun-section">
+            <h2>Relaxation Quiz</h2>
+            <div class="activity quiz">
+                <p>Answer the following question to find out how relaxed you feel right now:</p>
+                <label for="relaxQuiz">On a scale of 1-10, how relaxed are you?</label>
+                <input type="text" id="relaxQuiz" placeholder="Enter your number here...">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+
+        <!-- Activity Section 3 -->
+        <div class="fun-section">
+            <h2>Memory Matching Game</h2>
+            <div class="activity">
+                <p>Sharpen your memory with this simple matching game. Try to remember the sequence of calming images and recreate them in order.</p>
+                <p><strong>How to Play:</strong> Start with a few items, and try to recall them. Increase difficulty by adding more items as you get better.</p>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

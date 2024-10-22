@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Mental Health Help</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Mental Health Help</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you! Whether you have a question, need support, or want to provide feedback, feel free to reach out.</p>
+        
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit" class="btn submit-btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-details">
+            <h2>Contact Details</h2>
+            <p>Email: support@uplift.com</p>
+            <p>Phone: +1 (555) 123-4567</p>
+            <p>Address: 123 Uplift Avenue, Wellness City, WC 10001</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Uplift. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behaviour Tracker</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff1493;
+            padding: 15px 20px;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .content-container {
+            max-width: 800px;
+            margin: 120px auto 40px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #ff1493;
+            margin-bottom: 20px;
+        }
+
+        .tracker-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .tracker-form label {
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .tracker-form input[type="text"], 
+        .tracker-form input[type="number"], 
+        .tracker-form textarea, 
+        .tracker-form select {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-bottom: 15px;
+        }
+
+        .tracker-form textarea {
+            resize: vertical;
+            height: 100px;
+        }
+
+        .tracker-form button {
+            padding: 10px;
+            background-color: #ff1493;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .tracker-form button:hover {
+            background-color: #ff60b7;
+        }
+
+        .insights {
+            margin-top: 20px;
+        }
+
+        .insight-block {
+            background-color: #ff1493;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="nav-brand">Mental Health Help</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Home</a></li>
+           
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Content Container -->
+    <div class="content-container">
+        <h1>Behaviour Tracker</h1>
+        <p>Track your daily behavior and mood to help monitor your mental well-being. Fill out the form below:</p>
+
+        <!-- Tracker Form -->
+        <form class="tracker-form">
+            <label for="mood">Today's Mood:</label>
+            <select id="mood" name="mood">
+                <option value="happy">Happy</option>
+                <option value="sad">Sad</option>
+                <option value="anxious">Anxious</option>
+                <option value="calm">Calm</option>
+                <option value="stressed">Stressed</option>
+                <option value="angry">Angry</option>
+            </select>
+
+            <label for="activity">Main Activity of the Day:</label>
+            <input type="text" id="activity" name="activity" placeholder="e.g., Work, Exercise, Socializing">
+
+            <label for="hours">Hours Slept Last Night:</label>
+            <input type="number" id="hours" name="hours" min="0" max="24">
+
+            <label for="journal">Any Other Notes:</label>
+            <textarea id="journal" name="journal" placeholder="How was your day? Any specific thoughts or events?"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Insights Section -->
+        <div class="insights">
+            <h2>Insights</h2>
+            <div class="insight-block">
+                <p><strong>Tip of the Day:</strong> Consistency is key. Tracking your mood regularly can help identify patterns and provide a clearer understanding of your mental health journey.</p>
+            </div>
+            <div class="insight-block">
+                <p><strong>Fun Fact:</strong> Studies show that getting at least 7-8 hours of sleep every night significantly improves cognitive function and emotional stability.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

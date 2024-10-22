@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Record Your Journey</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ff1493;
+            padding: 15px 20px;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 120px auto 40px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            color: #ff1493;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #333;
+            font-size: 1.4em;
+            margin-bottom: 10px;
+        }
+
+        .section textarea {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            resize: vertical;
+        }
+
+        .section textarea:focus {
+            outline: none;
+            border-color: #ff1493;
+        }
+
+        .section button {
+            padding: 10px 20px;
+            background-color: #ff1493;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .section button:hover {
+            background-color: #ff69b4;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="nav-brand">Mental Health Help</div>
+        <ul class="nav-links">
+            <li><a href="dashboard.html">Home</a></li>
+            
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Content Container -->
+    <div class="content-container">
+        <h1>Record Your Journey</h1>
+        <p>Use this space to document your mental health journey. Reflect on your emotions, goals, and progress over time.</p>
+
+        <!-- Section 1: Daily Mood Tracker -->
+        <div class="section">
+            <h2>Daily Mood Tracker</h2>
+            <p>How are you feeling today? Write down your current mood and emotions.</p>
+            <textarea placeholder="I am feeling..."></textarea>
+            <button type="submit">Save Entry</button>
+        </div>
+
+        <!-- Section 2: Set Your Goals -->
+        <div class="section">
+            <h2>Set Your Goals</h2>
+            <p>What are your personal goals for improving your mental well-being? List them here to track your progress.</p>
+            <textarea placeholder="My goals are..."></textarea>
+            <button type="submit">Save Goals</button>
+        </div>
+
+        <!-- Section 3: Achievements -->
+        <div class="section">
+            <h2>Celebrate Your Achievements</h2>
+            <p>Reflect on what you have accomplished so far. Celebrate your wins, both big and small!</p>
+            <textarea placeholder="Today I achieved..."></textarea>
+            <button type="submit">Save Achievement</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
